@@ -1,0 +1,10 @@
+<p>contentprojection works!</p>
+<div>
+  <ng-content></ng-content>
+  <ul *ngFor="let products of array">
+    <li>{{products.name}}
+    <img [src]="products.productImage" alt="" srcset="" height="100px">
+    <span>{{products.price}}</span>
+  </li>
+  </ul>
+</div>
